@@ -1,0 +1,171 @@
+      h4, h5, h6,
+      h1, h2, h3 {margin: 0;}
+      ul, ol, li{margin: 0; padding: 0;}
+      p {margin: 0;padding: 0;}
+      body{
+        margin:0;
+        padding:0;
+      }
+
+      @font-face{
+        font-family:'Poppins';
+        src: url('../fonts/Poppins-SemiBold.ttf');
+      }
+      @font-face{
+        font-family:'Poppins-Bold';
+        src: url('../fonts/Poppins-Bold.ttf');
+      }
+      @font-face{
+        font-family:'Roboto';
+        src: url('../fonts/Roboto-Regular.ttf');
+      }
+
+      body {
+        font-family: 'Poppins';
+        transition: background-color .5s;
+      }
+      a{
+        cursor:pointer;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      a:focus{
+        text-decoration: none;
+      }
+      a.navbar-brand{
+        padding: 0;
+      }
+      .navbar .nav{
+        padding-bottom: 10px;
+        font-size: 18px;
+        margin-left: 350px;
+      }
+      .navbar-brand{
+        color:#444444;
+        transition: 0.2s;
+        font-size: 45px;
+      }
+      .navbar{
+        border-bottom:1px solid #AFAFAF;
+        border-radius:0;
+        margin:0;
+        padding:0;
+        background-color: #fff;
+      }
+      .navbar-nav>li>a{
+        color:black;
+      }
+      .navbar-nav>li>a:hover ,.navbar-right>li>a:hover{
+        background: none;
+        color:#f69d3d;
+        transition: 0.2s;
+      }
+      .active{
+        border-bottom:5px solid #f69d3d;
+      }
+      .navbar-nav>li>a:focus ,.nav .open>a:focus{
+        background:none;
+        color:#f69d3d;
+      }
+      button.navbar-toggle{
+        border-color:#444444;
+      }
+      .icon-bar{
+        background-color: #444444;
+      }
+
+      /*content*/
+      body{
+        background-color: #fcfcfc;
+      }
+      body{
+        margin-top:65px;
+      }
+
+      .logo{
+        width: 200px; 
+        margin-top: -10px;
+      }
+
+      #myFooter {
+        background-color: #3a3f46;
+        color: white;
+      }
+
+      #myFooter h5 {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+
+      #myFooter ul {
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 1.7;
+      }
+
+      #myFooter a {
+        color: #d2d1d1;
+        text-decoration: none;
+      }
+
+      .footer-logo{
+        width: 300px;
+        margin-left: -60px;
+      }
+
+    /*iphone 5*/
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .navbar-header{
+      	background-color: #fff;
+      }
+      
+      .navbar .nav{
+        margin: 0px;
+      }
+      .collapsed{
+        border:2.5px solid #444444;
+      }
+      .icon-bar{
+        border:1.2px solid #444444;
+      }
+      .navbar-toggle:focus{
+       border:2.5px solid #444444;
+     }
+     .navbar-brand{
+     	font-size: 20px;
+     }
+
+     .logo{
+        width: 200px; 
+        margin-top: -13px;
+        margin-left: -40px;
+      }
+      body{
+        margin-top:55px;
+      }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar-brand{
+      font-size: 20px;
+    }
+    .navbar .nav{
+        margin-left: 40px;
+    }
+    .logo{
+        width: 200px; 
+        margin-left: -35px;
+    }
+    body{
+        margin-top:65px;
+      }
+  }

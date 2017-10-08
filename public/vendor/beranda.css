@@ -1,0 +1,55 @@
+.background {
+    background-color: #f69d3d;
+    width: 100%;
+}
+.sampah-gambar{
+	width: 200px;
+	height: 200px;
+}
+.kelola-sampah-wrap{
+	margin-top: 40px;
+}
+.ms-text__subtitle {
+    font-size: 18px;
+    font-family: Helvetica-Bold;
+}
+.u-mb2 {
+    margin-bottom: 1rem;
+}
+.u-mt2 {
+    margin-top: 1rem;
+}
+.carousel-indicators >.active,
+.carousel-inner > .active{
+	border: none !important;
+}
+
+.porter{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica-Bold;
+}
+
+.see-all{
+	color: #000;
+	line-height: 2.7;
+}
+
+.see-all:hover{
+	color: #f69d3d;
+}
+
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .sampah-gambar{
+		width: 100px;
+		height: 100px;
+	}
+
+	.kelola-sampah-wrap{
+		margin-top: 20px;
+	}
+	
+}
