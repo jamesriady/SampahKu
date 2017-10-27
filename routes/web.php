@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('pages.front-end.beranda');
+    // return view('pages.front-end.beranda');
+    return view('pages.front-end.layouts.template1');
 });
 Route::get('/tentangkami', function () {
     return view('pages.front-end.tentangkami');
