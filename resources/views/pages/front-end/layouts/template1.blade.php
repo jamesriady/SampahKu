@@ -30,21 +30,22 @@
                         <a class="page-scroll" href="#one">Intro</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#two">Highlights</a>
+                        <a class="page-scroll" href="#two">Features</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#three">Gallery</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#four">Features</a>
+                        <a class="page-scroll" href="#four">Why?</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#last">Contact</a>
                     </li>
                 </ul>
+                    
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#">Login</a>
                     </li>
                 </ul>
             </div>
@@ -288,7 +289,8 @@
                     <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row">
+                    <form class="contact-form row" action="{{ route('message.store') }}" method="POST">
+                        {{ csrf_field() }}
                         <div class="col-md-4">
                             <label></label>
                             <input type="text" class="form-control" placeholder="Name">
@@ -299,11 +301,15 @@
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="Phone">
+                            <select id="subject" name="subject" class="form-control" name="subject" required="required">
+                                <option value="1">General Customer Service</option>
+                                <option value="2">Suggestions</option>
+                                <option value="3">Product Support</option>
+                            </select>
                         </div>
                         <div class="col-md-12">
                             <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                            <textarea class="form-control" rows="9" placeholder="Your message here.." name="message"></textarea>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
